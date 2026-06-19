@@ -156,7 +156,6 @@
 function u(n,t,cr,m,sub){return{n,t,cr,m:m||'mn',sub:sub||''}}
 function info(txt){return{info:txt}}
 
-/* ===== FAFCE mallas ===== */
 const mercadeo={name:'Mercadeo',title:'Profesional en Mercadeo',fac:'FAFCE',mod:['Virtual'],sem:9,und:29,semestres:[
   {n:1,c:'3 und · 16 cr',u:[u('Cultura del Emprendimiento','tra',8,'m100','Proyecto de vida emprendedor, ideas de negocio, innovación y creatividad'),u('Competencias Comunicativas y Aprendizaje Autónomo','tra',6,'mn','')]},
   {n:2,c:'3 und · 16 cr',u:[u('Gestión de Mercados','nuc',8,'m100','Fundamentos de mercadeo · Investigación de mercados'),u('Inglés de Negocios','tra',8,'mn','')]},
@@ -179,7 +178,6 @@ const admon={name:'Administración de Empresas',title:'Administrador(a) de Empre
   {n:8,c:'5 und · 18 cr',u:[u('Simulación Gerencial','nuc',3,'m100',''),info('Otras unidades del semestre no cargadas')]},
 ]};
 
-/* ===== FIN mallas ===== */
 const ingProduccion={name:'Ingeniería de Producción',title:'Ingeniero(a) de Producción',fac:'FIN',mod:['Presencial','Virtual'],sem:8,und:42,semestres:[
   {n:1,c:'5 und · 18 cr',u:[u('Cultura del Emprendimiento I','tra',2,'m100','Tu única unidad núcleo de match 100% en Ingeniería'),u('Fundamentación en Ingeniería','nuc',4,'mn',''),u('Análisis de Sistemas Discretos','nuc',6,'mn',''),u('Estructuras de Pensamiento Complejo','tra',3,'mn',''),u('Constitución Política, Ética y Responsabilidad Social','tra',3,'mn','')]},
   {n:2,c:'4 und · 18 cr',u:[u('Fundamentos de Sistemas Continuos','nuc',6,'mn',''),u('Modelado de Fenómenos Físicos','nuc',6,'mn',''),u('Modelado de Fenómenos Químicos','nuc',null,'mn',''),u('Inglés de Negocios Básico','tra',3,'mn','')]},
@@ -201,7 +199,6 @@ const ingSistemas={name:'Ingeniería de Sistemas',title:'Ingeniero(a) de Sistema
   {n:8,c:'6 und · 18 cr',u:[u('Práctica Profesional','nuc',6,'mn',''),info('Otras unidades no cargadas')]},
 ]};
 
-/* ===== FHCS malla ===== */
 const estudiosCultural={name:'Estudios y Gestión Cultural',title:'Prof. en Estudios y Gestión Cultural',fac:'FHCS',mod:['Presencial'],sem:8,und:37,semestres:[
   {n:1,c:'4 und · 18 cr',u:[u('Fundamentos de las Empresas Culturales','nuc',6,'mf','Modelo de negocio y gestión cultural'),u('Apreciación del Arte I','nuc',6,'mn',''),u('Competencias Comunicativas I','tra',3,'mn',''),u('Competencias Comunicativas II','tra',3,'mn','')]},
   {n:2,c:'4 und · 18 cr',u:[u('Derecho Integral de Empresa Cultural','nuc',6,'mn',''),u('Apreciación del Arte II','nuc',6,'mn',''),u('Estructura de Pensamiento Complejo','tra',3,'mn',''),u('Basic Business English','tra',3,'mn','')]},
@@ -213,7 +210,6 @@ const estudiosCultural={name:'Estudios y Gestión Cultural',title:'Prof. en Estu
   {n:8,c:'5 und · 18 cr',u:[u('Práctica Profesional','nuc',6,'mn',''),u('Seminario de Investigación','nuc',2,'mn',''),info('Otras unidades del semestre no cargadas')]},
 ]};
 
-/* ===== Facultades + programas ===== */
 const facultades=[
   {code:'FAFCE',name:'Facultad de Administración, Finanzas y Ciencias Económicas',n:9,mallas:5,programs:[
     {name:'Mercadeo',mod:['Virtual'],sem:9,estado:'disponible',match:'ms',detail:mercadeo,note:'Encaje perfecto'},
@@ -248,7 +244,6 @@ const DETAILED=[mercadeo,admon,ingProduccion,ingSistemas,estudiosCultural];
 function countMatches(){let c={m100:0,mf:0,ms:0};DETAILED.forEach(p=>p.semestres.forEach(s=>s.u.forEach(x=>{if(x.m&&c[x.m]!==undefined)c[x.m]++})));c.ms=facultades.flatMap(f=>f.programs).filter(p=>p.match==='ms').length;return c;}
 const CT=countMatches();
 
-/* ===== render ===== */
 const stats=[{b:3,s:'Facultades'},{b:21,s:'Programas'},{b:18,s:'Mallas'},{b:301,s:'Unidades'},{b:CT.m100,s:'Match 100%',cls:'hl'},{b:CT.mf,s:'Match fuerte',cls:'hl2'},{b:CT.ms,s:'Supera malla',cls:'hl3'}];
 document.getElementById('stats').innerHTML=stats.map(s=>`<div class="stat ${s.cls||''}"><b>${s.b}</b><span>${s.s}</span></div>`).join('');
 const modTag=m=>m.map(x=>`<span class="tg ${x[0]=='P'?'p':'v'}">${x}</span>`).join('');
@@ -298,7 +293,6 @@ function openMalla(i,j){const p=facultades[i].programs[j],d=p.detail;hideAll();
 function hideAll(){['facview','progview','mallaview'].forEach(id=>document.getElementById(id).classList.add('hide'));}
 function scrollTop(){window.scrollTo({top:0,behavior:'smooth'});}
 
-/* ===== match view ===== */
 const fp=f=>`<span class="facpill fp-${f.toLowerCase()}">${f}</span>`;
 const m100List=[
   ['Gestión de Mercados / Fundamentos de Mercadeo','Mercadeo · S2 · Nuclear','8 cr','FAFCE'],
@@ -320,4 +314,54 @@ const mfList=[
   ['Gestión Tecnológica y del Conocimiento','Adm. Empresas S1 · Mercadeo S7 · Ing. Sistemas S4 · Ing. Producción S3 · Estudios Cult. S3','—','IA / digital'],
   ['Contexto Económico y Empresa','Mercadeo · S4 · Nuclear','8 cr','Base Ing. Comercial + MBA'],
   ['Gestión Humana','Adm. Empresas · S6 · Nuclear','3 cr','Liderazgo de equipos'],
-  ['Gestión de Operaciones','Adm. Empresas · S4 · Nuclear','4 cr','Experiencia tra
+  ['Gestión de Operaciones','Adm. Empresas · S4 · Nuclear','4 cr','Experiencia trade'],
+  ['Análisis Microeconómico / Macroentorno','Adm. Empresas · S3–S4 · Nuclear','3 cr',''],
+  ['Tecnología, Comunicación y Cultura','Estudios y Gestión Cultural · S4 · Nuclear','6 cr','Negocios digitales'],
+  ['Negociación Intercultural','Estudios y Gestión Cultural · S4 · Transversal','3 cr',''],
+  ['Gestión de Proyectos Culturales','Estudios y Gestión Cultural · S7 · Nuclear','6 cr',''],
+  ['Fundamentos de las Empresas Culturales','Estudios y Gestión Cultural · S1 · Nuclear','6 cr','Modelo de negocio'],
+  ['Patrimonio y Turismo Cultural','Estudios y Gestión Cultural · S6 · Transversal','4 cr',''],
+];
+document.getElementById('match').innerHTML=`
+  <div class="sectitle serif">¿Dónde hago match?</div>
+  <div class="sub">Cruce de tu trayectoria (mercadeo, ventas y trade, IA aplicada, emprendimiento, liderazgo, negocios digitales) con las unidades reales de las 5 mallas leídas en las 3 facultades.</div>
+  <div class="mblock">
+    <h3><span class="mlabel" style="background:var(--m100)"></span>🟢 Match 100% — las dictas hoy, sin preparación <span style="font-size:13px;color:var(--muted);font-weight:400">(${m100List.length})</span></h3>
+    ${m100List.map(r=>`<div class="urow"><div><div class="nm">${r[0]}${fp(r[3].split(' · ')[0])}</div><div class="loc">${r[1]}</div></div><div class="cr">${r[2]}</div></div>`).join('')}
+  </div>
+  <div class="mblock">
+    <h3><span class="mlabel" style="background:var(--mfuerte)"></span>🟡 Match fuerte — con ajuste mínimo <span style="font-size:13px;color:var(--muted);font-weight:400">(${mfList.length})</span></h3>
+    ${mfList.map(r=>`<div class="urow"><div><div class="nm">${r[0]}</div><div class="loc">${r[1]}${r[3]?' · '+r[3]:''}</div></div><div class="cr">${r[2]}</div></div>`).join('')}
+  </div>
+  <div class="mblock">
+    <h3><span class="mlabel" style="background:var(--msupera)"></span>🔵 Donde tu perfil SUPERA la malla visible</h3>
+    <div class="note">Tu expertise más actual —<b>IA para negocios, marketplaces, social commerce, transformación digital y marca personal</b>— corresponde a programas nuevos como <b>Mercadeo y Estrategia Comercial</b> (FAFCE) e <b>Ingeniería en Ciencia de Datos</b> (FIN), que figuran como <i>“malla por publicar”</i>. Ahí el match es total pero aún no hay unidades cargadas: son unidades que <b>puedes proponer tú</b>.</div>
+  </div>
+  <div class="mblock">
+    <h3>📍 Lectura por facultad</h3>
+    <div class="urow"><div><div class="nm">FAFCE — Administración, Finanzas y Ciencias Económicas</div><div class="loc">Tu núcleo. Mercadeo (encaje perfecto) y Administración de Empresas concentran casi todo el match.</div></div><div class="cr">🟢 alto</div></div>
+    <div class="urow"><div><div class="nm">FHCS — Humanidades</div><div class="loc">Entras solo por <b>Estudios y Gestión Cultural</b>: marketing cultural y negocios internacionales (no por emprendimiento ni IA, que casi no existen aquí).</div></div><div class="cr">🟢 puntual</div></div>
+    <div class="urow"><div><div class="nm">FIN — Ingeniería</div><div class="loc">Match marginal. Solo la transversal <b>Cultura del Emprendimiento</b> (100%) y <b>Gestión Tecnológica y del Conocimiento</b> (fuerte). El resto es núcleo técnico.</div></div><div class="cr">⚪ bajo</div></div>
+  </div>`;
+
+document.getElementById('perfil').innerHTML=`
+  <div class="sectitle serif">Mi perfil docente</div>
+  <div class="profile">
+    <h2>Jorge Hugo Pérez Gaona</h2>
+    <div class="role">CEO ICONE ialabs · Docente universitario (EAN / Politécnico) · Speaker EXMA · Mentor en IA e Innovación · Creador del ICONE Method</div>
+    <div class="chips">${['Gerencia de Mercadeo','Marketing de marca','Estrategia comercial y ventas','Trade marketing','Investigación / inteligencia de mercados','Pricing','Negocios digitales','Marketplaces & social commerce','IA aplicada a negocios','Innovación y emprendimiento','Liderazgo y cultura organizacional','Transformación digital','Marca personal','MBA · Ingeniero Comercial'].map(c=>`<span class="chip">${c}</span>`).join('')}</div>
+    <div class="pmetrics"><div><b>25+</b><span>años experiencia</span></div><div><b>50+</b><span>empresas</span></div><div><b>3K+</b><span>estudiantes</span></div><div><b>${CT.m100}</b><span>unidades match 100%</span></div></div>
+  </div>
+  <div class="note">Fuentes del perfil: LinkedIn (in/jorgehugoperezgaona) y iconeialabs.com. Match construido sobre 5 mallas leídas del dashboard EAN: Mercadeo, Administración de Empresas, Ingeniería de Sistemas, Ingeniería de Producción y Estudios y Gestión Cultural.</div>`;
+
+document.getElementById('disc').innerHTML='Reconstrucción del dashboard “Mapa de Unidades de Estudio · EAN” con capa de match docente para Jorge Hugo Pérez. 5 mallas con detalle y match (2 FAFCE, 2 FIN, 1 FHCS); resto a nivel de ficha. Algunas unidades transversales del dashboard aparecen sin nombre por un error de parseo de la fuente. Verificar contra las Mallas Curriculares de Pregrado EAN antes de usos formales.';
+
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));t.classList.add('active');
+  ['explorar','match','perfil'].forEach(s=>document.getElementById(s).classList.add('hide'));
+  document.getElementById(t.dataset.tab).classList.remove('hide');
+  if(t.dataset.tab=='explorar')backFac();scrollTop();
+});
+</script>
+</body>
+</html>
