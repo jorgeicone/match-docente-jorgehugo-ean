@@ -23,8 +23,6 @@
   .serif{font-family:'Fraunces',Georgia,serif}
   .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
   a{color:inherit}
-
-  /* HEADER */
   .top{position:sticky;top:0;z-index:30;background:rgba(243,238,227,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .brandrow{display:flex;align-items:center;gap:14px;padding:18px 0 10px}
   .logo{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--green),var(--green2));display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;flex:0 0 auto}
@@ -38,8 +36,6 @@
   .tabs{display:flex;gap:8px;flex-wrap:wrap;padding-bottom:14px}
   .tab{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:8px 14px;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;display:flex;align-items:center;gap:7px}
   .tab.active{background:#fff;color:var(--ink);box-shadow:var(--shadow);border-color:#d8cdb6}
-
-  /* PROFILE */
   .profile{background:linear-gradient(120deg,#1c4a39,#26604a);color:#f3eee3;border-radius:16px;padding:20px 22px;margin:18px 0;box-shadow:var(--shadow)}
   .profile h2{margin:0 0 4px;font-size:19px;font-weight:600}
   .profile .role{font-size:12.5px;opacity:.85;margin-bottom:12px}
@@ -48,18 +44,13 @@
   .pmetrics{display:flex;gap:22px;margin-top:14px;flex-wrap:wrap}
   .pmetrics div b{font-family:'Fraunces',serif;font-size:20px;display:block;line-height:1}
   .pmetrics div span{font-size:10.5px;opacity:.8;text-transform:uppercase;letter-spacing:.06em}
-
   section{padding:6px 0 40px}
   .sectitle{font-size:21px;font-weight:600;margin:18px 0 4px}
   .sub{color:var(--muted);font-size:13px;margin-bottom:16px}
-
-  /* LEGEND */
   .legend{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0;font-size:12px;color:var(--muted)}
   .legend span{display:inline-flex;align-items:center;gap:6px}
   .dot{width:9px;height:9px;border-radius:50%}
   .d-nuc{background:var(--nuclear)} .d-tra{background:var(--transversal)} .d-ele{background:var(--electiva)}
-
-  /* FACULTY CARDS */
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
   .fac{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--green);border-radius:14px;padding:18px;cursor:pointer;transition:.15s;box-shadow:var(--shadow)}
   .fac:hover{transform:translateY(-2px)}
@@ -69,8 +60,6 @@
   .fac .lbl{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
   .badge{display:inline-block;margin-top:10px;background:var(--m100bg);color:#15803d;font-size:11px;font-weight:600;border-radius:999px;padding:3px 10px}
   .badge.g{background:#eef3ef;color:var(--green2)}
-
-  /* PROGRAM LIST */
   .back{display:inline-flex;align-items:center;gap:6px;color:var(--green2);font-size:13px;font-weight:600;cursor:pointer;margin:8px 0 14px;background:none;border:none}
   .plist{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:12px}
   .prog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px}
@@ -83,8 +72,6 @@
   .arrow{color:var(--muted);font-size:18px}
   .matchpill{font-size:10.5px;font-weight:700;border-radius:999px;padding:2px 8px;white-space:nowrap}
   .mp100{background:var(--m100bg);color:#15803d}.mpf{background:var(--mfuertebg);color:#9a6206}.mps{background:var(--msuperabg);color:#1d4ed8}
-
-  /* MALLA */
   .malla-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:4px}
   .malla-head h3{font-family:'Fraunces',serif;font-size:22px;margin:0;font-weight:600}
   .malla-head .ml{font-size:12.5px;color:var(--muted)}
@@ -104,8 +91,6 @@
   .u.info{font-size:11.5px;color:var(--muted);font-style:italic;background:#faf6ec}
   .u.m100{background:linear-gradient(90deg,var(--m100bg),transparent 70%)}
   .u.mf{background:linear-gradient(90deg,var(--mfuertebg),transparent 70%)}
-
-  /* MATCH VIEW */
   .mblock{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 18px 14px;margin-bottom:16px;box-shadow:var(--shadow)}
   .mblock h3{font-family:'Fraunces',serif;font-size:18px;display:flex;align-items:center;gap:9px}
   .mlabel{width:14px;height:14px;border-radius:4px;display:inline-block}
@@ -114,6 +99,8 @@
   .urow .nm{font-weight:600}
   .urow .loc{font-size:11px;color:var(--muted);margin-top:2px}
   .urow .cr{font-size:11px;color:var(--muted);white-space:nowrap}
+  .facpill{font-size:9.5px;font-weight:700;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:middle}
+  .fp-fafce{background:#e7f1ec;color:var(--green2)}.fp-fin{background:#e7edf7;color:#345f96}.fp-fhcs{background:#fbeede;color:var(--transversal)}
   .note{background:#faf6ec;border:1px dashed var(--line);border-radius:10px;padding:12px 14px;font-size:12.5px;color:#5d5443;margin-top:8px}
   .disclaimer{font-size:11.5px;color:var(--muted);border-top:1px solid var(--line);margin-top:26px;padding-top:14px}
   .hide{display:none}
@@ -140,12 +127,10 @@
 </div>
 
 <div class="wrap">
-
-  <!-- EXPLORAR -->
   <section id="explorar">
     <div id="facview">
       <div class="sectitle serif">Facultades</div>
-      <div class="sub">Toca una facultad para ver sus programas. Las unidades vienen marcadas con tu nivel de match.</div>
+      <div class="sub">Toca una facultad para ver sus programas. Cada unidad viene marcada con tu nivel de match.</div>
       <div class="legend">
         <span><i class="dot d-nuc"></i>Nuclear</span>
         <span><i class="dot d-tra"></i>Transversal</span>
@@ -157,314 +142,182 @@
         <span><i class="mlabel" style="background:var(--mnone)"></i>⚪ Sin match</span>
       </div>
       <div class="grid" id="facgrid"></div>
-      <div class="note" style="margin-top:18px">Las mallas detalladas (unidad por unidad y por semestre) provienen de la página oficial de <b>Mallas Curriculares de Pregrado</b> de la Universidad EAN. En esta versión se reconstruyeron con detalle las mallas de <b>Mercadeo</b> y <b>Administración de Empresas</b> (tus programas de mayor afinidad); en las demás se conserva la ficha del programa y se indica cuando la malla está “por publicar” o sus unidades aún no están cargadas.</div>
+      <div class="note" style="margin-top:18px">Mallas reconstruidas con detalle y match: <b>Mercadeo</b> y <b>Administración de Empresas</b> (FAFCE), <b>Ingeniería de Sistemas</b> e <b>Ingeniería de Producción</b> (FIN) y <b>Estudios y Gestión Cultural</b> (FHCS). En los demás programas se conserva la ficha y se indica cuándo la malla está “por publicar” o sus unidades no se cargaron. Fuente: Mallas Curriculares de Pregrado EAN.</div>
     </div>
     <div id="progview" class="hide"></div>
     <div id="mallaview" class="hide"></div>
   </section>
-
-  <!-- MATCH -->
   <section id="match" class="hide"></section>
-
-  <!-- PERFIL -->
   <section id="perfil" class="hide"></section>
-
   <div class="disclaimer" id="disc"></div>
 </div>
 
 <script>
-/* ===== DATA ===== */
-const M={m100:'🟢 Match 100%',mf:'🟡 Match fuerte',ms:'🔵 Supera la malla',mn:'⚪ Sin match'};
-// unit helper: u(name,tipo,cr,match,sub)
 function u(n,t,cr,m,sub){return{n,t,cr,m:m||'mn',sub:sub||''}}
 function info(txt){return{info:txt}}
 
-const mercadeo={
-  name:'Mercadeo', title:'Profesional en Mercadeo', fac:'FAFCE',
-  mod:['Virtual'], sem:9, und:29, estado:'disponible',
-  semestres:[
-    {n:1,c:'3 und · 16 cr',u:[
-      u('Cultura del Emprendimiento','tra',8,'m100','Proyecto de vida emprendedor, ideas de negocio, innovación y creatividad'),
-      u('Competencias Comunicativas y Aprendizaje Autónomo','tra',6,'mn','Procesos de comunicación, TIC, lectoescritura'),
-    ]},
-    {n:2,c:'3 und · 16 cr',u:[
-      u('Gestión de Mercados','nuc',8,'m100','Fundamentos de mercadeo · Investigación de mercados'),
-      u('Inglés de Negocios','tra',8,'mn','Inglés II · III · IV'),
-    ]},
-    {n:3,c:'3 und · 16 cr',u:[
-      u('Estudio del Consumidor','nuc',8,'m100','Comportamiento y perfil del consumidor, psicología, antropología de mercados, investigación de mercados'),
-      u('Desarrollo del Pensamiento y Métodos Cuantitativos','tra',6,'mn','Pensamiento lógico-matemático, probabilidades, programación lineal, análisis estadístico'),
-    ]},
-    {n:4,c:'3 und · 18 cr',u:[
-      u('Distribución y Logística','nuc',8,'m100','Canales de distribución, intermediación y logística, transporte, empaque, almacenamiento'),
-      u('Contexto Económico y Empresa','nuc',8,'mf','Fundamentos de economía, micro y macroeconomía, problemas colombianos'),
-    ]},
-    {n:5,c:'3 und · 16 cr',u:[
-      u('Comunicación Integrada de Marketing','nuc',8,'m100','Publicidad, medios, marca y comunicación 360°'),
-      info('Unidades adicionales del semestre no cargadas en esta versión'),
-    ]},
-    {n:6,c:'3 und · 16 cr',u:[
-      u('Gestión Comercial y de Ventas','nuc',8,'m100','Fuerza de ventas, trade, gestión comercial'),
-      info('Unidades adicionales del semestre no cargadas en esta versión'),
-    ]},
-    {n:7,c:'4 und · 16 cr',u:[
-      u('Gestión Tecnológica del Conocimiento','nuc',null,'mf','Tecnología, datos y conocimiento aplicados al negocio'),
-      info('Unidades adicionales del semestre no cargadas en esta versión'),
-    ]},
-    {n:8,c:'4 und · 18 cr',u:[
-      u('Práctica Profesional','ele',6,'mn',''),
-      info('Unidades adicionales del semestre no cargadas en esta versión'),
-    ]},
-    {n:9,c:'—',u:[ info('Semestre 9: unidades no cargadas en esta versión') ]},
-  ]
-};
+/* ===== FAFCE mallas ===== */
+const mercadeo={name:'Mercadeo',title:'Profesional en Mercadeo',fac:'FAFCE',mod:['Virtual'],sem:9,und:29,semestres:[
+  {n:1,c:'3 und · 16 cr',u:[u('Cultura del Emprendimiento','tra',8,'m100','Proyecto de vida emprendedor, ideas de negocio, innovación y creatividad'),u('Competencias Comunicativas y Aprendizaje Autónomo','tra',6,'mn','')]},
+  {n:2,c:'3 und · 16 cr',u:[u('Gestión de Mercados','nuc',8,'m100','Fundamentos de mercadeo · Investigación de mercados'),u('Inglés de Negocios','tra',8,'mn','')]},
+  {n:3,c:'3 und · 16 cr',u:[u('Estudio del Consumidor','nuc',8,'m100','Comportamiento y perfil del consumidor, psicología, investigación de mercados'),u('Desarrollo del Pensamiento y Métodos Cuantitativos','tra',6,'mn','')]},
+  {n:4,c:'3 und · 18 cr',u:[u('Distribución y Logística','nuc',8,'m100','Canales de distribución, intermediación y logística'),u('Contexto Económico y Empresa','nuc',8,'mf','Fundamentos de economía, micro y macroeconomía')]},
+  {n:5,c:'3 und · 16 cr',u:[u('Comunicación Integrada de Marketing','nuc',8,'m100','Publicidad, medios, marca y comunicación 360°'),info('Otras unidades del semestre no cargadas')]},
+  {n:6,c:'3 und · 16 cr',u:[u('Gestión Comercial y de Ventas','nuc',8,'m100','Fuerza de ventas, trade, gestión comercial'),info('Otras unidades del semestre no cargadas')]},
+  {n:7,c:'4 und · 16 cr',u:[u('Gestión Tecnológica del Conocimiento','nuc',null,'mf','Tecnología y datos aplicados al negocio'),info('Otras unidades del semestre no cargadas')]},
+  {n:8,c:'4 und · 18 cr',u:[u('Práctica Profesional','ele',6,'mn',''),info('Otras unidades del semestre no cargadas')]},
+  {n:9,c:'—',u:[info('Semestre 9: unidades no cargadas')]},
+]};
+const admon={name:'Administración de Empresas',title:'Administrador(a) de Empresas',fac:'FAFCE',mod:['Presencial','Virtual'],sem:8,und:49,semestres:[
+  {n:1,c:'6 und · 18 cr',u:[u('Introducción a la Administración','nuc',3,'m100',''),u('Gestión Tecnológica y del Conocimiento','tra',3,'mf','IA y transformación digital'),u('Economía y Empresa','tra',3,'mf',''),u('Estructuras de Pensamiento Complejo','tra',3,'mn',''),u('Competencias Comunicativas I','tra',3,'mn',''),u('Constitución Política, Ética y Responsabilidad Social','tra',3,'mn','')]},
+  {n:2,c:'6 und · 18 cr',u:[u('Cultura del Emprendimiento I','tra',2,'m100',''),u('Teoría y Comportamiento Organizacional','nuc',4,'mf',''),u('Fundamentación Financiera','nuc',4,'mn',''),u('Matemáticas','nuc',3,'mn',''),u('Competencias Comunicativas II','tra',3,'mn',''),u('Inglés de Negocios Básico','tra',3,'mn','')]},
+  {n:3,c:'7 und · 18 cr',u:[u('Fundamentos de Mercados','nuc',3,'m100',''),u('Análisis Microeconómico','nuc',3,'mf',''),u('Contexto Geopolítico','tra',3,'mf',''),u('Contabilidad de Costos','nuc',2,'mn',''),u('Estadística','nuc',2,'mn',''),u('Estudios Socio-Humanísticos I','tra',2,'mn',''),u('Inglés de Negocios Intermedio','tra',3,'mn','')]},
+  {n:4,c:'6 und · 18 cr',u:[u('Estrategia de Mercados','nuc',3,'m100',''),u('Cultura del Emprendimiento II','tra',2,'m100',''),u('International Business','tra',3,'m100',''),u('Análisis del Macroentorno','nuc',3,'mf',''),u('Gestión de Operaciones','nuc',4,'mf',''),u('Matemáticas Financieras','nuc',2,'mn','')]},
+  {n:5,c:'6 und · 18 cr',u:[u('Liderazgo y Comportamiento','nuc',3,'m100',''),info('Otras unidades del semestre no cargadas')]},
+  {n:6,c:'6 und · 18 cr',u:[u('Gestión Humana','nuc',3,'mf',''),info('Otras unidades del semestre no cargadas')]},
+  {n:7,c:'7 und · 18 cr',u:[u('Gerencia Estratégica','nuc',3,'m100',''),info('Otras unidades del semestre no cargadas')]},
+  {n:8,c:'5 und · 18 cr',u:[u('Simulación Gerencial','nuc',3,'m100',''),info('Otras unidades del semestre no cargadas')]},
+]};
 
-const admon={
-  name:'Administración de Empresas', title:'Administrador(a) de Empresas', fac:'FAFCE',
-  mod:['Presencial','Virtual'], sem:8, und:49, estado:'disponible',
-  semestres:[
-    {n:1,c:'6 und · 18 cr',u:[
-      u('Introducción a la Administración','nuc',3,'m100',''),
-      u('Gestión Tecnológica y del Conocimiento','tra',3,'mf','IA y transformación digital aplicada'),
-      u('Economía y Empresa','tra',3,'mf',''),
-      u('Estructuras de Pensamiento Complejo','tra',3,'mn',''),
-      u('Competencias Comunicativas I','tra',3,'mn',''),
-      u('Constitución Política, Ética y Responsabilidad Social','tra',3,'mn',''),
-    ]},
-    {n:2,c:'6 und · 18 cr',u:[
-      u('Cultura del Emprendimiento I','tra',2,'m100',''),
-      u('Teoría y Comportamiento Organizacional','nuc',4,'mf',''),
-      u('Fundamentación Financiera','nuc',4,'mn',''),
-      u('Matemáticas','nuc',3,'mn',''),
-      u('Competencias Comunicativas II','tra',3,'mn',''),
-      u('Inglés de Negocios Básico','tra',3,'mn',''),
-    ]},
-    {n:3,c:'7 und · 18 cr',u:[
-      u('Fundamentos de Mercados','nuc',3,'m100',''),
-      u('Análisis Microeconómico','nuc',3,'mf',''),
-      u('Contexto Geopolítico','tra',3,'mf',''),
-      u('Contabilidad de Costos','nuc',2,'mn',''),
-      u('Estadística','nuc',2,'mn',''),
-      u('Estudios Socio-Humanísticos I','tra',2,'mn',''),
-      u('Inglés de Negocios Intermedio','tra',3,'mn',''),
-    ]},
-    {n:4,c:'6 und · 18 cr',u:[
-      u('Estrategia de Mercados','nuc',3,'m100',''),
-      u('Cultura del Emprendimiento II','tra',2,'m100',''),
-      u('International Business','tra',3,'m100',''),
-      u('Análisis del Macroentorno','nuc',3,'mf',''),
-      u('Gestión de Operaciones','nuc',4,'mf',''),
-      u('Matemáticas Financieras','nuc',2,'mn',''),
-    ]},
-    {n:5,c:'6 und · 18 cr',u:[
-      u('Liderazgo y Comportamiento','nuc',3,'m100',''),
-      info('Unidades adicionales del semestre no cargadas en esta versión'),
-    ]},
-    {n:6,c:'6 und · 18 cr',u:[
-      u('Gestión Humana','nuc',3,'mf',''),
-      info('Unidades adicionales del semestre no cargadas en esta versión'),
-    ]},
-    {n:7,c:'7 und · 18 cr',u:[
-      u('Gerencia Estratégica','nuc',3,'m100',''),
-      info('Unidades adicionales del semestre no cargadas en esta versión'),
-    ]},
-    {n:8,c:'5 und · 18 cr',u:[
-      u('Simulación Gerencial','nuc',3,'m100',''),
-      info('Unidades adicionales del semestre no cargadas en esta versión'),
-    ]},
-  ]
-};
+/* ===== FIN mallas ===== */
+const ingProduccion={name:'Ingeniería de Producción',title:'Ingeniero(a) de Producción',fac:'FIN',mod:['Presencial','Virtual'],sem:8,und:42,semestres:[
+  {n:1,c:'5 und · 18 cr',u:[u('Cultura del Emprendimiento I','tra',2,'m100','Tu única unidad núcleo de match 100% en Ingeniería'),u('Fundamentación en Ingeniería','nuc',4,'mn',''),u('Análisis de Sistemas Discretos','nuc',6,'mn',''),u('Estructuras de Pensamiento Complejo','tra',3,'mn',''),u('Constitución Política, Ética y Responsabilidad Social','tra',3,'mn','')]},
+  {n:2,c:'4 und · 18 cr',u:[u('Fundamentos de Sistemas Continuos','nuc',6,'mn',''),u('Modelado de Fenómenos Físicos','nuc',6,'mn',''),u('Modelado de Fenómenos Químicos','nuc',null,'mn',''),u('Inglés de Negocios Básico','tra',3,'mn','')]},
+  {n:3,c:'6 und · 18 cr',u:[u('Gestión Tecnológica y del Conocimiento','tra',3,'mf','IA / transformación digital'),u('Aplicaciones de Sistemas Continuos','nuc',3,'mn',''),u('Gestión de Materiales','nuc',4,'mn',''),u('Análisis de Procesos Químicos','nuc',3,'mn',''),u('Competencias Comunicativas I','tra',3,'mn',''),u('Estudios Sociohumanísticos I','tra',2,'mn','')]},
+  {n:4,c:'5 und · 18 cr',u:[u('Modelado de Sistemas Aleatorios','nuc',3,'mn',''),u('Análisis de Procesos Físicos','nuc',6,'mn',''),u('Ecuaciones Diferenciales','nuc',3,'mn',''),u('Competencias Comunicativas II','tra',3,'mn',''),u('Inglés de Negocios Intermedio','tra',3,'mn','')]},
+  {n:5,c:'6 und · 18 cr',u:[u('Investigación de Operaciones','nuc',3,'mn',''),info('Otras unidades del semestre no cargadas')]},
+  {n:6,c:'4 und · 18 cr',u:[u('Ingeniería de Métodos y Gestión de Calidad','nuc',6,'mn',''),info('Otras unidades del semestre no cargadas')]},
+  {n:7,c:'6 und · 18 cr',u:[u('Práctica Profesional','nuc',6,'mn',''),info('Otras unidades del semestre no cargadas')]},
+  {n:8,c:'6 und · 18 cr',u:[u('Electiva II','ele',3,'mn',''),info('Otras unidades del semestre no cargadas')]},
+]};
+const ingSistemas={name:'Ingeniería de Sistemas',title:'Ingeniero(a) de Sistemas',fac:'FIN',mod:['Presencial','Virtual'],sem:8,und:42,semestres:[
+  {n:1,c:'5 und · 18 cr',u:[u('Fundamentación en Ingeniería','nuc',4,'mn',''),u('Análisis de Sistemas Discretos','nuc',6,'mn',''),u('Estructuras de Pensamiento Complejo','tra',3,'mn',''),info('2 unidades transversales con nombre oculto (error de parseo del dashboard)')]},
+  {n:2,c:'4 und · 18 cr',u:[u('Fundamentos de Sistemas Continuos','nuc',6,'mn',''),u('Modelado de Fenómenos Físicos','nuc',6,'mn',''),u('Estudios Sociohumanísticos I','tra',2,'mn',''),info('1 unidad nuclear con nombre oculto (error de parseo)')]},
+  {n:3,c:'5 und · 18 cr',u:[u('Aplicaciones de Sistemas Continuos','nuc',3,'mn',''),u('Inglés de Negocios Básico','tra',3,'mn',''),info('3 unidades con nombre oculto (error de parseo)')]},
+  {n:4,c:'6 und · 18 cr',u:[u('Gestión Tecnológica y del Conocimiento','tra',3,'mf','IA / transformación digital'),u('Sistemas Operativos','nuc',3,'mn',''),u('Modelado de Sistemas Aleatorios','nuc',3,'mn',''),u('Ecuaciones Diferenciales','nuc',3,'mn',''),info('2 unidades transversales con nombre oculto (error de parseo)')]},
+  {n:5,c:'5 und · 18 cr',u:[info('Unidades del semestre con nombre oculto (error de parseo) — núcleo técnico')]},
+  {n:6,c:'5 und · 18 cr',u:[info('Unidades del semestre con nombre oculto (error de parseo) — núcleo técnico')]},
+  {n:7,c:'6 und · 18 cr',u:[info('Unidades del semestre con nombre oculto (error de parseo) — núcleo técnico')]},
+  {n:8,c:'6 und · 18 cr',u:[u('Práctica Profesional','nuc',6,'mn',''),info('Otras unidades no cargadas')]},
+]};
 
+/* ===== FHCS malla ===== */
+const estudiosCultural={name:'Estudios y Gestión Cultural',title:'Prof. en Estudios y Gestión Cultural',fac:'FHCS',mod:['Presencial'],sem:8,und:37,semestres:[
+  {n:1,c:'4 und · 18 cr',u:[u('Fundamentos de las Empresas Culturales','nuc',6,'mf','Modelo de negocio y gestión cultural'),u('Apreciación del Arte I','nuc',6,'mn',''),u('Competencias Comunicativas I','tra',3,'mn',''),u('Competencias Comunicativas II','tra',3,'mn','')]},
+  {n:2,c:'4 und · 18 cr',u:[u('Derecho Integral de Empresa Cultural','nuc',6,'mn',''),u('Apreciación del Arte II','nuc',6,'mn',''),u('Estructura de Pensamiento Complejo','tra',3,'mn',''),u('Basic Business English','tra',3,'mn','')]},
+  {n:3,c:'4 und · 18 cr',u:[u('Gestión Tecnológica y del Conocimiento','tra',3,'mf','IA / transformación digital'),u('Historia del Arte I','nuc',6,'mn',''),u('Caracterización de los Estudios de la Cultura','nuc',6,'mn',''),u('Intermediate Business English','tra',3,'mn','')]},
+  {n:4,c:'5 und · 18 cr',u:[u('International Business','tra',3,'m100','Misma unidad que dictas en Adm. de Empresas'),u('Tecnología, Comunicación y Cultura','nuc',6,'mf','Negocios digitales aplicados a cultura'),u('Negociación Intercultural','tra',3,'mf',''),u('Contexto Geopolítico','tra',3,'mf',''),u('Historia del Arte II','nuc',6,'mn','')]},
+  {n:5,c:'4 und · 18 cr',u:[u('Gestión de la Cooperación y del Marketing Cultural','nuc',6,'m100','Marketing — tu núcleo, aplicado a cultura'),u('Historia del Arte III','nuc',6,'mn',''),info('2 unidades del semestre no cargadas')]},
+  {n:6,c:'6 und · 18 cr',u:[u('Patrimonio y Turismo Cultural','tra',4,'mf',''),u('Modernidad y Posmodernidad','nuc',6,'mn',''),info('Otras unidades del semestre no cargadas')]},
+  {n:7,c:'5 und · 18 cr',u:[u('Gestión de Proyectos Culturales','nuc',6,'mf',''),u('Electiva I','ele',3,'mn',''),info('Otras unidades del semestre no cargadas')]},
+  {n:8,c:'5 und · 18 cr',u:[u('Práctica Profesional','nuc',6,'mn',''),u('Seminario de Investigación','nuc',2,'mn',''),info('Otras unidades del semestre no cargadas')]},
+]};
+
+/* ===== Facultades + programas ===== */
 const facultades=[
-  {code:'FAFCE', name:'Facultad de Administración, Finanzas y Ciencias Económicas', n:9, mallas:5,
-   programs:[
-     {name:'Mercadeo', mod:['Virtual'], sem:9, estado:'disponible', match:'ms', detail:mercadeo, note:'Encaje perfecto'},
-     {name:'Administración de Empresas', mod:['Presencial','Virtual'], sem:8, estado:'disponible', match:'m100', detail:admon},
-     {name:'Mercadeo y Estrategia Comercial', mod:['Presencial'], sem:8, estado:'por publicar', match:'ms', note:'IA · social commerce · inteligencia de mercados'},
-     {name:'Negocios Internacionales', mod:['Presencial','Virtual'], sem:8, estado:'disponible', match:'mf'},
-     {name:'Economía', mod:['Presencial','Virtual'], sem:8, estado:'disponible', match:'mf'},
-     {name:'Contaduría Pública', mod:['Presencial','Virtual'], sem:8, estado:'disponible'},
-     {name:'Administración en Salud', mod:['Virtual'], sem:9, estado:'por publicar'},
-     {name:'Administración Pública', mod:['Presencial'], sem:8, estado:'por publicar'},
-     {name:'Turismo Sostenible', mod:['Presencial'], sem:8, estado:'por publicar', match:'mf', note:'Enfoque de emprendimiento'},
-   ]},
-  {code:'FHCS', name:'Facultad de Humanidades y Ciencias Sociales', n:4, mallas:2,
-   programs:[ {info:'Detalle de programas no capturado desde el enlace público (4 programas · 2 con malla detallada).'} ]},
-  {code:'FIN', name:'Facultad de Ingeniería', n:8, mallas:5,
-   programs:[
-     {name:'Ingeniería de Sistemas', mod:['Presencial'], estado:'disponible', match:'mf', note:'Match parcial vía IA / negocios digitales'},
-     {name:'Ingeniería Ambiental', mod:['Presencial'], estado:'disponible'},
-     {name:'Ingeniería en Energías', mod:['Presencial'], estado:'disponible'},
-     {name:'Ingeniería Química', mod:['Presencial'], estado:'disponible'},
-     {info:'+4 programas adicionales no capturados desde el enlace público.'},
-   ]},
+  {code:'FAFCE',name:'Facultad de Administración, Finanzas y Ciencias Económicas',n:9,mallas:5,programs:[
+    {name:'Mercadeo',mod:['Virtual'],sem:9,estado:'disponible',match:'ms',detail:mercadeo,note:'Encaje perfecto'},
+    {name:'Administración de Empresas',mod:['Presencial','Virtual'],sem:8,estado:'disponible',match:'m100',detail:admon},
+    {name:'Mercadeo y Estrategia Comercial',mod:['Presencial'],sem:8,estado:'por publicar',match:'ms',note:'IA · social commerce'},
+    {name:'Negocios Internacionales',mod:['Presencial','Virtual'],sem:8,estado:'disponible',match:'mf'},
+    {name:'Economía',mod:['Presencial','Virtual'],sem:8,estado:'disponible',match:'mf'},
+    {name:'Contaduría Pública',mod:['Presencial','Virtual'],sem:8,estado:'disponible'},
+    {name:'Administración en Salud',mod:['Virtual'],sem:9,estado:'por publicar'},
+    {name:'Administración Pública',mod:['Presencial'],sem:8,estado:'por publicar'},
+    {name:'Turismo Sostenible',mod:['Presencial'],sem:8,estado:'por publicar',match:'mf',note:'Enfoque de emprendimiento'},
+  ]},
+  {code:'FHCS',name:'Facultad de Humanidades y Ciencias Sociales',n:4,mallas:2,programs:[
+    {name:'Estudios y Gestión Cultural',mod:['Presencial'],sem:8,estado:'disponible',match:'mf',detail:estudiosCultural,note:'Match por marketing cultural y negocios int.'},
+    {name:'Lenguas Modernas',mod:['Presencial','Virtual'],sem:8,estado:'disponible',note:'Idiomas · match mínimo'},
+    {name:'Comunicación',mod:['Presencial'],sem:8,estado:'por publicar'},
+    {name:'Psicología',mod:['Virtual'],sem:8,estado:'por publicar'},
+  ]},
+  {code:'FIN',name:'Facultad de Ingeniería',n:8,mallas:5,programs:[
+    {name:'Ingeniería de Producción',mod:['Presencial','Virtual'],sem:8,estado:'disponible',match:'m100',detail:ingProduccion,note:'Cultura del Emprendimiento'},
+    {name:'Ingeniería de Sistemas',mod:['Presencial','Virtual'],sem:8,estado:'disponible',match:'mf',detail:ingSistemas,note:'Solo Gestión Tecnológica'},
+    {name:'Ingeniería Ambiental',mod:['Presencial'],sem:8,estado:'disponible'},
+    {name:'Ingeniería en Energías',mod:['Presencial'],sem:8,estado:'disponible'},
+    {name:'Ingeniería Química',mod:['Presencial'],sem:8,estado:'disponible'},
+    {name:'Ingeniería en Ciencia de Datos',mod:['Presencial'],sem:8,estado:'por publicar'},
+    {name:'Ingeniería Industrial',mod:['Virtual'],sem:9,estado:'por publicar'},
+    {name:'Ingeniería Mecatrónica',mod:['Presencial'],sem:8,estado:'por publicar'},
+  ]},
 ];
 
-/* match counts from the two detailed mallas */
-function countMatches(){
-  let c={m100:0,mf:0,ms:0};
-  [mercadeo,admon].forEach(p=>p.semestres.forEach(s=>s.u.forEach(x=>{if(x.m&&c[x.m]!==undefined)c[x.m]++})));
-  // distinct-ish: also count "supera" programs
-  c.ms = facultades.flatMap(f=>f.programs).filter(p=>p.match==='ms').length;
-  return c;
-}
+const DETAILED=[mercadeo,admon,ingProduccion,ingSistemas,estudiosCultural];
+function countMatches(){let c={m100:0,mf:0,ms:0};DETAILED.forEach(p=>p.semestres.forEach(s=>s.u.forEach(x=>{if(x.m&&c[x.m]!==undefined)c[x.m]++})));c.ms=facultades.flatMap(f=>f.programs).filter(p=>p.match==='ms').length;return c;}
 const CT=countMatches();
 
-/* ===== RENDER ===== */
-const stats=[
-  {b:3,s:'Facultades'},{b:21,s:'Programas'},{b:18,s:'Mallas'},{b:301,s:'Unidades'},
-  {b:CT.m100,s:'Match 100%',cls:'hl'},{b:CT.mf,s:'Match fuerte',cls:'hl2'},{b:CT.ms,s:'Supera malla',cls:'hl3'}
-];
+/* ===== render ===== */
+const stats=[{b:3,s:'Facultades'},{b:21,s:'Programas'},{b:18,s:'Mallas'},{b:301,s:'Unidades'},{b:CT.m100,s:'Match 100%',cls:'hl'},{b:CT.mf,s:'Match fuerte',cls:'hl2'},{b:CT.ms,s:'Supera malla',cls:'hl3'}];
 document.getElementById('stats').innerHTML=stats.map(s=>`<div class="stat ${s.cls||''}"><b>${s.b}</b><span>${s.s}</span></div>`).join('');
-
 const modTag=m=>m.map(x=>`<span class="tg ${x[0]=='P'?'p':'v'}">${x}</span>`).join('');
 const estTag=e=>e=='disponible'?'<span class="tg ok">malla disponible</span>':'<span class="tg pub">malla por publicar</span>';
 const mPill=m=>!m?'':`<span class="matchpill ${m=='m100'?'mp100':m=='mf'?'mpf':'mps'}">${m=='m100'?'🟢 100%':m=='mf'?'🟡 Fuerte':'🔵 Supera'}</span>`;
-const tdot=t=>`<span class="tdot ${t=='nuc'?'d-nuc':t=='tra'?'d-tra':'d-ele'}" style="background:${t=='nuc'?'var(--nuclear)':t=='tra'?'var(--transversal)':'var(--electiva)'}"></span>`;
+const tdot=t=>`<span class="tdot" style="background:${t=='nuc'?'var(--nuclear)':t=='tra'?'var(--transversal)':'var(--electiva)'}"></span>`;
 const tName=t=>t=='nuc'?'Nuclear':t=='tra'?'Transversal':'Electiva';
-const mTag=m=>m=='m100'?'<span class="mtag mt100">🟢 Match 100%</span>':m=='mf'?'<span class="mtag mtf">🟡 Match fuerte</span>':m=='ms'?'<span class="mtag mts">🔵 Supera la malla</span>':'<span class="mtag mtn">⚪ Sin match</span>';
+const mTag=m=>m=='m100'?'<span class="mtag mt100">🟢 Match 100%</span>':m=='mf'?'<span class="mtag mtf">🟡 Match fuerte</span>':m=='ms'?'<span class="mtag mts">🔵 Supera la malla</span>':'';
 
-// faculty cards
 document.getElementById('facgrid').innerHTML=facultades.map((f,i)=>`
-  <div class="fac" style="border-left-color:${i==0?'var(--green)':i==1?'var(--transversal)':'#3a5f8a'}" onclick="openFac(${i})">
+  <div class="fac" style="border-left-color:${f.code=='FAFCE'?'var(--green)':f.code=='FHCS'?'var(--transversal)':'#3a5f8a'}" onclick="openFac(${i})">
     <div class="code">${f.code}</div>
     <h3 class="serif">${f.name}</h3>
     <div class="big">${f.n}</div><div class="lbl">Programas</div>
-    <div class="badge ${i==0?'':'g'}">${f.mallas} con malla detallada</div>
-    ${i==0?'<div class="badge" style="background:var(--m100bg);color:#15803d">★ Aquí está tu match</div>':''}
+    <div class="badge ${f.code=='FAFCE'?'':'g'}">${f.mallas} con malla detallada</div>
+    ${f.code=='FAFCE'?'<div class="badge" style="background:var(--m100bg);color:#15803d">★ Aquí está tu match</div>':''}
   </div>`).join('');
 
-function openFac(i){
-  const f=facultades[i];
-  hideAll(); document.getElementById('facview').classList.add('hide');
-  const pv=document.getElementById('progview'); pv.classList.remove('hide');
+function openFac(i){const f=facultades[i];hideAll();document.getElementById('facview').classList.add('hide');
+  const pv=document.getElementById('progview');pv.classList.remove('hide');
   pv.innerHTML=`<button class="back" onclick="backFac()">‹ Facultades</button>
     <div class="malla-head"><h3 class="serif">${f.name}</h3><span class="ml">${f.n} programas</span></div>
     <div class="plist" style="margin-top:14px">${f.programs.map((p,j)=>{
-      if(p.info)return `<div class="prog"><div style="font-size:12.5px;color:var(--muted);font-style:italic">${p.info}</div></div>`;
       const click=p.detail?`class="prog click" onclick="openMalla(${i},${j})"`:'class="prog"';
-      return `<div ${click}>
-        <div><div class="pn">${p.name}</div>
-          <div class="meta">${modTag(p.mod)} ${p.sem?'· '+p.sem+' sem':''} · ${estTag(p.estado)} ${p.note?'· <i>'+p.note+'</i>':''}</div>
-          <div style="margin-top:6px">${mPill(p.match)}</div>
-        </div>
-        ${p.detail?'<span class="arrow">›</span>':''}
-      </div>`;
-    }).join('')}</div>`;
-  scrollTop();
-}
+      return `<div ${click}><div><div class="pn">${p.name}</div>
+        <div class="meta">${modTag(p.mod)} · ${p.sem} sem · ${estTag(p.estado)} ${p.note?'· <i>'+p.note+'</i>':''}</div>
+        <div style="margin-top:6px">${mPill(p.match)}</div></div>
+        ${p.detail?'<span class="arrow">›</span>':''}</div>`;}).join('')}</div>`;
+  scrollTop();}
 function backFac(){hideAll();document.getElementById('facview').classList.remove('hide');scrollTop();}
 
-function openMalla(i,j){
-  const p=facultades[i].programs[j], d=p.detail;
-  hideAll();
-  const mv=document.getElementById('mallaview'); mv.classList.remove('hide');
+function openMalla(i,j){const p=facultades[i].programs[j],d=p.detail;hideAll();
+  const mv=document.getElementById('mallaview');mv.classList.remove('hide');
+  const n100=d.semestres.flatMap(s=>s.u).filter(x=>x.m=='m100').length, nf=d.semestres.flatMap(s=>s.u).filter(x=>x.m=='mf').length;
   mv.innerHTML=`<button class="back" onclick="openFac(${i})">‹ ${facultades[i].name}</button>
     <div class="malla-head"><h3 class="serif">${d.name}</h3><span class="ml">${d.title} · ${d.sem} semestres · ${facultades[i].code}</span></div>
     <div class="modtog">${d.mod.map(m=>`<span class="tg ${m[0]=='P'?'p':'v'}" style="padding:5px 12px">${m}</span>`).join('')}</div>
-    <div class="sub" style="margin-top:6px">${d.sem} semestres · ${d.und} unidades de estudio en esta malla &nbsp;·&nbsp; <b style="color:var(--m100)">🟢 ${d.semestres.flatMap(s=>s.u).filter(x=>x.m=='m100').length}</b> &nbsp; <b style="color:var(--mfuerte)">🟡 ${d.semestres.flatMap(s=>s.u).filter(x=>x.m=='mf').length}</b> de match (de las unidades cargadas)</div>
-    <div class="mcols">${d.semestres.map(s=>`
-      <div class="sem">
-        <h4>Semestre ${s.n} <small>${s.c}</small></h4>
-        ${s.u.map(x=>{
-          if(x.info)return `<div class="u info">${x.info}</div>`;
-          const cls=x.m=='m100'?'m100':x.m=='mf'?'mf':'';
-          return `<div class="u ${cls}">
-            <div class="un">${tdot(x.t)}<span>${x.n}</span></div>
-            <div class="tx">${tName(x.t)}${x.cr?' · '+x.cr+' créditos':''}</div>
-            ${x.sub?`<div class="sub" style="margin-bottom:0">↳ ${x.sub}</div>`:''}
-            ${x.m!=='mn'?mTag(x.m):''}
-          </div>`;
-        }).join('')}
+    <div class="sub" style="margin-top:6px">${d.sem} semestres · ${d.und} unidades en esta malla &nbsp;·&nbsp; <b style="color:var(--m100)">🟢 ${n100}</b> &nbsp; <b style="color:var(--mfuerte)">🟡 ${nf}</b> de match (en las unidades cargadas)</div>
+    <div class="mcols">${d.semestres.map(s=>`<div class="sem"><h4>Semestre ${s.n} <small>${s.c}</small></h4>
+      ${s.u.map(x=>{if(x.info)return `<div class="u info">${x.info}</div>`;
+        const cls=x.m=='m100'?'m100':x.m=='mf'?'mf':'';
+        return `<div class="u ${cls}"><div class="un">${tdot(x.t)}<span>${x.n}</span></div>
+          <div class="tx">${tName(x.t)}${x.cr?' · '+x.cr+' créditos':''}</div>
+          ${x.sub?`<div class="sub" style="margin-bottom:0">↳ ${x.sub}</div>`:''}${x.m!=='mn'?mTag(x.m):''}</div>`;}).join('')}
       </div>`).join('')}</div>`;
-  scrollTop();
-}
+  scrollTop();}
 function hideAll(){['facview','progview','mallaview'].forEach(id=>document.getElementById(id).classList.add('hide'));}
 function scrollTop(){window.scrollTo({top:0,behavior:'smooth'});}
 
-/* MATCH VIEW */
+/* ===== match view ===== */
+const fp=f=>`<span class="facpill fp-${f.toLowerCase()}">${f}</span>`;
 const m100List=[
   ['Gestión de Mercados / Fundamentos de Mercadeo','Mercadeo · S2 · Nuclear','8 cr','FAFCE'],
-  ['Investigación de Mercados','Mercadeo · S2–S3 (en Gestión de Mercados y Estudio del Consumidor)','—','FAFCE'],
   ['Estudio del Consumidor','Mercadeo · S3 · Nuclear','8 cr','FAFCE'],
   ['Distribución y Logística (Canales)','Mercadeo · S4 · Nuclear','8 cr','FAFCE'],
   ['Comunicación Integrada de Marketing','Mercadeo · S5 · Nuclear','8 cr','FAFCE'],
   ['Gestión Comercial y de Ventas','Mercadeo · S6 · Nuclear','8 cr','FAFCE'],
-  ['Cultura del Emprendimiento','Mercadeo S1 · Adm. Empresas S2 y S4 · Transversal','2–8 cr','FAFCE'],
-  ['Fundamentos de Mercados','Adm. Empresas · S3 · Nuclear','3 cr','FAFCE'],
   ['Estrategia de Mercados','Adm. Empresas · S4 · Nuclear','3 cr','FAFCE'],
-  ['International Business','Adm. Empresas · S4 · Transversal','3 cr','FAFCE'],
-  ['Liderazgo y Comportamiento','Adm. Empresas · S5 · Nuclear','3 cr','FAFCE'],
+  ['Fundamentos de Mercados','Adm. Empresas · S3 · Nuclear','3 cr','FAFCE'],
   ['Gerencia Estratégica','Adm. Empresas · S7 · Nuclear','3 cr','FAFCE'],
   ['Simulación Gerencial','Adm. Empresas · S8 · Nuclear','3 cr','FAFCE'],
+  ['Liderazgo y Comportamiento','Adm. Empresas · S5 · Nuclear','3 cr','FAFCE'],
   ['Introducción a la Administración','Adm. Empresas · S1 · Nuclear','3 cr','FAFCE'],
+  ['Cultura del Emprendimiento','Mercadeo S1 · Adm. Empresas S2/S4 · Ing. Producción S1 · Transversal','2–8 cr','FAFCE · FIN'],
+  ['International Business','Adm. Empresas S4 · Estudios y Gestión Cultural S4 · Transversal','3 cr','FAFCE · FHCS'],
+  ['Gestión de la Cooperación y del Marketing Cultural','Estudios y Gestión Cultural · S5 · Nuclear','6 cr','FHCS'],
 ];
 const mfList=[
-  ['Gestión Tecnológica y del Conocimiento','Adm. Empresas S1 · Mercadeo S7','—','Tu IA aplicada es ventaja'],
-  ['Gestión Humana','Adm. Empresas · S6 · Nuclear','3 cr','Liderazgo de equipos'],
-  ['Gestión de Operaciones','Adm. Empresas · S4 · Nuclear','4 cr','Experiencia trade / cadena'],
+  ['Gestión Tecnológica y del Conocimiento','Adm. Empresas S1 · Mercadeo S7 · Ing. Sistemas S4 · Ing. Producción S3 · Estudios Cult. S3','—','IA / digital'],
   ['Contexto Económico y Empresa','Mercadeo · S4 · Nuclear','8 cr','Base Ing. Comercial + MBA'],
-  ['Análisis Microeconómico','Adm. Empresas · S3 · Nuclear','3 cr',''],
-  ['Análisis del Macroentorno','Adm. Empresas · S4 · Nuclear','3 cr',''],
-  ['Contexto Geopolítico','Adm. Empresas · S3 · Transversal','3 cr',''],
-  ['Economía y Empresa','Adm. Empresas · S1 · Transversal','3 cr',''],
-];
-
-document.getElementById('match').innerHTML=`
-  <div class="sectitle serif">¿Dónde hago match?</div>
-  <div class="sub">Cruce de tu trayectoria (mercadeo, ventas y trade, IA aplicada, emprendimiento, liderazgo, negocios digitales) con las unidades reales de las mallas leídas.</div>
-
-  <div class="mblock">
-    <h3><span class="mlabel" style="background:var(--m100)"></span>🟢 Match 100% — las dictas hoy, sin preparación <span style="font-size:13px;color:var(--muted);font-weight:400">(${m100List.length})</span></h3>
-    ${m100List.map(r=>`<div class="urow"><div><div class="nm">${r[0]}</div><div class="loc">${r[1]} · ${r[3]}</div></div><div class="cr">${r[2]}</div></div>`).join('')}
-  </div>
-
-  <div class="mblock">
-    <h3><span class="mlabel" style="background:var(--mfuerte)"></span>🟡 Match fuerte — con ajuste mínimo <span style="font-size:13px;color:var(--muted);font-weight:400">(${mfList.length})</span></h3>
-    ${mfList.map(r=>`<div class="urow"><div><div class="nm">${r[0]}</div><div class="loc">${r[1]}${r[3]?' · '+r[3]:''}</div></div><div class="cr">${r[2]}</div></div>`).join('')}
-  </div>
-
-  <div class="mblock">
-    <h3><span class="mlabel" style="background:var(--msupera)"></span>🔵 Donde tu perfil SUPERA la malla visible</h3>
-    <div class="note">Tu expertise más actual —<b>IA para negocios, marketplaces, social commerce, transformación digital y marca personal</b>— corresponde a programas nuevos como <b>Mercadeo y Estrategia Comercial</b> (FAFCE), que en el dashboard figuran como <i>“malla por publicar”</i>. Ahí el match es total, pero aún no hay unidades cargadas para marcar: son unidades que <b>puedes proponer tú</b> a la coordinación.</div>
-  </div>
-
-  <div class="mblock">
-    <h3>📍 ¿Dónde hago MÁS match?</h3>
-    <div class="urow"><div><div class="nm">Facultad de Administración, Finanzas y Ciencias Económicas (FAFCE)</div><div class="loc">Concentra casi el 100% de tu encaje</div></div></div>
-    <div class="urow"><div><div class="nm">1º Mercadeo</div><div class="loc">Virtual · 9 semestres · encaje perfecto</div></div><div class="cr">🟢 6 · 🟡 1</div></div>
-    <div class="urow"><div><div class="nm">2º Administración de Empresas</div><div class="loc">Presencial/Virtual · 8 semestres</div></div><div class="cr">🟢 8 · 🟡 6</div></div>
-    <div class="urow"><div><div class="nm">3º Negocios Internacionales · Economía · Mercadeo y Estrategia Comercial</div><div class="loc">Comparten unidades transversales y de mercadeo</div></div><div class="cr">match parcial</div></div>
-  </div>`;
-
-document.getElementById('perfil').innerHTML=`
-  <div class="sectitle serif">Mi perfil docente</div>
-  <div class="profile">
-    <h2>Jorge Hugo Pérez Gaona</h2>
-    <div class="role">CEO ICONE ialabs · Docente universitario (EAN / Politécnico) · Speaker EXMA · Mentor en IA e Innovación · Creador del ICONE Method</div>
-    <div class="chips">
-      ${['Gerencia de Mercadeo','Marketing de marca','Estrategia comercial y ventas','Trade marketing','Investigación / inteligencia de mercados','Fijación de precios (pricing)','Negocios digitales','Marketplaces & social commerce','IA aplicada a negocios','Innovación y emprendimiento','Liderazgo y cultura organizacional','Transformación digital','Marca personal','MBA · Ingeniero Comercial'].map(c=>`<span class="chip">${c}</span>`).join('')}
-    </div>
-    <div class="pmetrics">
-      <div><b>25+</b><span>años de experiencia</span></div>
-      <div><b>50+</b><span>empresas</span></div>
-      <div><b>3K+</b><span>estudiantes</span></div>
-      <div><b>${CT.m100}</b><span>unidades match 100%</span></div>
-    </div>
-  </div>
-  <div class="note">Fuentes del perfil: LinkedIn (in/jorgehugoperezgaona) y iconeialabs.com. El cruce de match se construyó sobre las mallas de Mercadeo y Administración de Empresas leídas desde el dashboard EAN.</div>`;
-
-document.getElementById('disc').innerHTML='Reconstrucción del dashboard “Mapa de Unidades de Estudio · EAN” con capa de match docente para Jorge Hugo Pérez. Datos curriculares basados en las mallas leídas desde el enlace público (Mercadeo y Administración de Empresas con detalle completo; resto a nivel de ficha). Verificar contra la fuente oficial de Mallas Curriculares de Pregrado EAN antes de usos formales.';
-
-/* TABS */
-document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
-  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
-  t.classList.add('active');
-  ['explorar','match','perfil'].forEach(s=>document.getElementById(s).classList.add('hide'));
-  document.getElementById(t.dataset.tab).classList.remove('hide');
-  if(t.dataset.tab=='explorar'){backFac();}
-  scrollTop();
-});
-</script>
-</body>
-</html>
+  ['Gestión Humana','Adm. Empresas · S6 · Nuclear','3 cr','Liderazgo de equipos'],
+  ['Gestión de Operaciones','Adm. Empresas · S4 · Nuclear','4 cr','Experiencia tra
